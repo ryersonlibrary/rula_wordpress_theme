@@ -254,6 +254,18 @@ function rula_team_post_type() {
 }
 add_action('init', 'rula_team_post_type');
 
+
+// This function must be called in context of a rula-team loop!
+// Returns the html for a single team member
+function rula_team_member() {
+	$team_member_name = get_the_title();
+
+	$html = <<<HTML
+<p class="rula-team-member">$team_member_name</p>
+HTML;
+
+	return $html;
+}
 // Prints the html block to display all the team members or an error
 function the_rula_team() {
   $query_args = array(
@@ -312,14 +324,8 @@ HTML;
   wp_reset_query();
 }
 
-// This function must be called in context of a rula-team loop!
-// Returns the html for a single team member
-function rula_team_member() {
-	$team_member_name = get_the_title();
-
-	$html = <<<HTML
-<p class="rula-team-member">$team_member_name</p>
-HTML;
-
-	return $html;
+function chrome_fix() {
+	if ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Chrome' ) !== false )
+		wp_add_inline_style( 'wp-admin', '#adminmenu { transform: translateZ(0); }' );
 }
+add_action('admin_enqueue_scripts', 'chrome_fix');

@@ -26,16 +26,16 @@
 
       <h2>Contact</h2>
       <p>
-        Email: <span class="email"><?php echo get_theme_mod('rula-email') ?></span><br>
+        Email: <a href="mailto:<?php echo get_theme_mod('rula-email') ?>" target="_blank"><span class="email"><?php echo get_theme_mod('rula-email') ?></span></a><br>
         Phone: <span class="phone"><?php echo get_theme_mod('rula-phone') ?></span>
       </p>
       <?php if ( get_theme_mod('rula-social') ) : ?>
       <div class='rula-social'>
         <h2>Social</h2>
         <p>
-          Twitter: @<span class="twitter-handle"><?php echo get_theme_mod('rula-twitter') ?></span><br>
-          Facebook: <span class="facebook-handle"><?php echo get_theme_mod('rula-facebook') ?></span><br>
-          Instagram: @<span class="instagram-handle"><?php echo get_theme_mod('rula-instagram') ?></span>
+          Twitter: <a href="https://twitter.com/<?php echo get_theme_mod('rula-twitter') ?>">@<span class="twitter-handle"><?php echo get_theme_mod('rula-twitter') ?></span></a><br>
+          Facebook: <a href="https://facebook.com/<?php echo get_theme_mod('rula-facebook') ?>"><span class="facebook-handle"><?php echo get_theme_mod('rula-facebook') ?></span></a><br>
+          Instagram: <a href="https://instagram.com/<?php echo get_theme_mod('rula-instagram') ?>">@<span class="instagram-handle"><?php echo get_theme_mod('rula-instagram') ?></span></a>
         </p>
       </div>
       <?php endif; ?>
