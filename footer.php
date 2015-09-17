@@ -45,6 +45,11 @@
       <p>
         &copy; 2015 Ryerson University Library &amp; Archives <span class="sep"> | </span> 2nd Floor - 350 Victoria Street, Toronto, ON M5B 2K3<br>
       </p>
+      <p>
+        <a href="http://ryerson.ca"><img class="ryerson-logo" src="<?php bloginfo('template_directory'); ?>/img/ryerson_logo.png"></a>
+        <span style="margin-left: 5px"></span>
+        <a href="http://library.ryerson.ca"><img class="rula-logo" src="<?php bloginfo('template_directory'); ?>/img/rula_logo.png"></a>
+      </p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
