@@ -26,7 +26,6 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
-
 		<div class="site-branding">
 			<?php if ( get_header_image() ) : ?>
 			<img class="site-header-image" src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="">
@@ -50,10 +49,18 @@
 			<!-- <p class="site-description"><?php bloginfo( 'description' ); ?></p> -->
 		</div><!-- .site-branding -->
 
+		<div class="social-links">
+			<ul>
+				<li><a href="https://twitter.com/<?php echo get_theme_mod('rula-twitter') ?>"><img src="<?php bloginfo('template_directory'); ?>/img/social-icons/32x32%20PNG/32-twitter.png"></a></li>
+				<li><a href="https://facebook.com/<?php echo get_theme_mod('rula-facebook') ?>"><img src="<?php bloginfo('template_directory'); ?>/img/social-icons/32x32%20PNG/32-facebook.png"></a></li>
+				<li><a href="https://instagram.com/<?php echo get_theme_mod('rula-instagram') ?>"><img src="<?php bloginfo('template_directory'); ?>/img/social-icons/32x32%20PNG/32-instagram.png"></a></li>
+			</ul>
+		</div>
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'underscores' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
