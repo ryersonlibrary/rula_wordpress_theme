@@ -15,7 +15,7 @@ get_header(); ?>
 
         <article id="post-<?php the_ID(); ?>" <?php post_class(array('content-section', 'blurb')); ?>>
           <header class="entry-header">
-            <h2>DM.. (z)ee?</h2>
+            <h2><?php the_title(); ?></h2>
           </header><!-- .entry-header -->
 
           <div class="entry-content">
