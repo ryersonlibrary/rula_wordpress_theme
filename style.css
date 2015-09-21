@@ -1003,7 +1003,6 @@ body {
   display: block;
 }
 
-
 /*--------------------------------------------------------------
 ## Typography
 --------------------------------------------------------------*/
@@ -1135,7 +1134,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-info p {
-  text-align: center;
+  text-align: left;
   font-size: 0.85em;
   margin-bottom: 0
 }
@@ -1203,7 +1202,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 .events ul li {
-  background: #abc;
+  background: rgba(91,194,244,0.05);
+  border: 2px solid rgb(91,194,244);
   padding: 0.5em 1em;
 }
 .events ul li + li {

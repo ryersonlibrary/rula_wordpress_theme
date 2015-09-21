@@ -41,10 +41,22 @@ get_header(); ?>
 
         <div class="entry-content">
           <ul>
-            <li>EVENT!</li>
-            <li>EVENT!</li>
-            <li>EVENT!</li>
-            <li>EVENT!</li>
+            <li>
+              Web Programming Intro<br>
+              September 18th @ 9pm
+            </li>
+            <li>
+              Web Programming Intro<br>
+              September 18th @ 9pm
+            </li>
+            <li>
+              Web Programming Intro<br>
+              September 18th @ 9pm
+            </li>
+            <li>
+              Web Programming Intro<br>
+              September 18th @ 9pm
+            </li>
           </ul>
         </div><!-- .entry-content -->
       </article>
