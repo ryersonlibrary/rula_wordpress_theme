@@ -1,11 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
+ * The template for the homepage
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -35,27 +30,10 @@ get_header(); ?>
       <?php endwhile; // End of the loop. ?>
 
       <?php get_template_part( 'eventbrite/eventbrite', 'widget' ); ?>
+
+      <?php get_template_part( 'rula-partials/rula', 'hours' ); ?>
       
-      <article class="content-section hours">
-        <header class="entry-header">
-          <h2>Hours</h2>
-        </header><!-- .entry-header -->
-
-        <div class="entry-content">
-          <ul>
-            <li>Monday: 10am - 5pm</li>
-            <li>Tuesday: 10am - 5pm</li>
-            <li>Wednesday: 10am - 5pm</li>
-            <li>Thursday: 10am - 5pm</li>
-            <li>Friday: 10am - 5pm</li>
-            <li>Saturday: 10am - 5pm</li>
-            <li>Sunday: 10am - 5pm</li>
-          </ul>
-        </div><!-- .entry-content -->
-      </article>
-
     </main><!-- #main -->
   </div><!-- #primary -->
 
-<?php // get_sidebar(); ?>
 <?php get_footer(); ?>
