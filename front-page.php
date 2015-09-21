@@ -13,7 +13,7 @@ get_header(); ?>
 
       <?php while ( have_posts() ) : the_post(); ?>
 
-        <article id="post-<?php the_ID(); ?>" <?php post_class(['content-section', 'blurb']); ?>>
+        <article id="post-<?php the_ID(); ?>" <?php post_class(array('content-section', 'blurb')); ?>>
           <header class="entry-header">
             <h2>DM.. (z)ee?</h2>
           </header><!-- .entry-header -->

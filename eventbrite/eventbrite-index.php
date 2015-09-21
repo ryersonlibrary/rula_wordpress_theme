@@ -21,7 +21,6 @@ get_header(); ?>
       <?php endwhile; // End of the loop. ?>
 
       <?php
-      /* COMMENTED UNTIL I FIGURE OUT HOW THIS SHOULD LOOK :)
         // Set up and call our Eventbrite query.
         $events = new Eventbrite_Query( apply_filters( 'eventbrite_query_args', array(
           'display_private' => true, // boolean
@@ -67,7 +66,6 @@ get_header(); ?>
         endif;
         // Return $post to its rightful owner.
         wp_reset_postdata();
-      */
       ?>
 
     </main><!-- #main -->
