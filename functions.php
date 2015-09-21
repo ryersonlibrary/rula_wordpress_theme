@@ -27,6 +27,8 @@ function underscores_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
+	// Add theme support for Eventbrite API plugin (https://wordpress.org/plugins/eventbrite-api/)
+	add_theme_support( 'eventbrite' );
 	/*
 	 * Let WordPress manage the document title.
 	 * By adding theme support, we declare that this theme does not use a

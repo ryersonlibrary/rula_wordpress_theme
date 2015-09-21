@@ -34,32 +34,7 @@ get_header(); ?>
 
       <?php endwhile; // End of the loop. ?>
 
-      <article class="content-section events">
-        <header class="entry-header">
-          <h2>Upcoming Events</h2>
-        </header><!-- .entry-header -->
-
-        <div class="entry-content">
-          <ul>
-            <li>
-              Web Programming Intro<br>
-              September 18th @ 9pm
-            </li>
-            <li>
-              Web Programming Intro<br>
-              September 18th @ 9pm
-            </li>
-            <li>
-              Web Programming Intro<br>
-              September 18th @ 9pm
-            </li>
-            <li>
-              Web Programming Intro<br>
-              September 18th @ 9pm
-            </li>
-          </ul>
-        </div><!-- .entry-content -->
-      </article>
+      <?php get_template_part( 'eventbrite/eventbrite', 'widget' ); ?>
       
       <article class="content-section hours">
         <header class="entry-header">
