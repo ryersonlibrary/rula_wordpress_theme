@@ -256,76 +256,7 @@ function rula_team_post_type() {
 }
 add_action('init', 'rula_team_post_type');
 
-
-// This function must be called in context of a rula-team loop!
-// Returns the html for a single team member
-function rula_team_member() {
-	$team_member_name = get_the_title();
-
-	$html = <<<HTML
-<p class="rula-team-member">$team_member_name</p>
-HTML;
-
-	return $html;
-}
-// Prints the html block to display all the team members or an error
-function the_rula_team() {
-  $query_args = array(
-    'post_type' => 'rula-team',
-    'post_status' => 'publish',
-    'posts_per_page' => -1,
-    'orderby' => 'rand'
-  );
-
-  $wp_query = new WP_Query($query_args);
-  echo '<div class="rula-team clear">';
-  while ( $wp_query->have_posts() ) : $wp_query->the_post();
-    echo rula_team_member();
-  endwhile;
-
-  if ( !$wp_query->have_posts() ) {
-  	// echo "<p>Something's not right, there are no team members! If there were, they would show up something like this:</p>";
-		$html = <<<HTML
-<p class="rula-team-member">
-	<span class="profile-img"><img src="http://lorempixel.com/500/500/cats"></span>
-	<span class="name">Bob Summers</span>
-</p>
-<p class="rula-team-member">
-	<span class="profile-img"><img src="http://lorempixel.com/500/500/cats"></span>
-	<span class="name">Bob Summers</span>
-</p>
-<p class="rula-team-member">
-	<span class="profile-img"><img src="http://lorempixel.com/500/500/cats"></span>
-	<span class="name">Bob Summers</span>
-</p>
-<p class="rula-team-member">
-	<span class="profile-img"><img src="http://lorempixel.com/500/500/cats"></span>
-	<span class="name">Bob Summers</span>
-</p>
-<p class="rula-team-member">
-	<span class="profile-img"><img src="http://lorempixel.com/500/500/cats"></span>
-	<span class="name">Bob Summers</span>
-</p>
-<p class="rula-team-member">
-	<span class="profile-img"><img src="http://lorempixel.com/500/500/cats"></span>
-	<span class="name">Bob Summers</span>
-</p>
-<p class="rula-team-member">
-	<span class="profile-img"><img src="http://lorempixel.com/500/500/cats"></span>
-	<span class="name">Bob Summers</span>
-</p>
-<p class="rula-team-member">
-	<span class="profile-img"><img src="http://lorempixel.com/500/500/cats"></span>
-	<span class="name">Bob Summers</span>
-</p>
-
-HTML;
-  	echo $html;
-  }
-  echo '</div>';
-  wp_reset_query();
-}
-
+// Wordpress admin breaks in chrome 44+ so we add this
 function chrome_fix() {
 	if ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Chrome' ) !== false )
 		wp_add_inline_style( 'wp-admin', '#adminmenu { transform: translateZ(0); }' );

@@ -20,10 +20,6 @@ function underscores_customize_register( $wp_customize ) {
     'rula-footer-settings' => array(
       'title' => 'Footer',
       'priority' => 120,
-    ),
-    'rula-hours-settings' => array(
-      'title' => 'Hours',
-      'priority' => 121
     )
   );
 
@@ -58,10 +54,7 @@ function underscores_customize_register( $wp_customize ) {
     ),
     'rula-social' => array(
       'default' => true
-    ),
-    'rula-hours-monday' => array(
-      'default' => '9 to 5'
-    ),
+    )
   );
 
   // https://codex.wordpress.org/Class_Reference/WP_Customize_Manager/add_control
@@ -100,12 +93,7 @@ function underscores_customize_register( $wp_customize ) {
       'label' => 'Enable Social Section',
       'section' => 'rula-footer-settings',
       'type' => 'checkbox'
-    ),
-    'rula-hours-monday' => array(
-      'label' => 'Monday Hours',
-      'section' => 'rula-hours-settings',
-      'type' => 'text'
-    ),
+    )
   );
 
   // Add our customizer sections

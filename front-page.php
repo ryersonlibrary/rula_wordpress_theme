@@ -32,8 +32,13 @@ get_header(); ?>
       <?php //get_template_part( 'eventbrite/eventbrite', 'widget' ); ?>
 
       <?php get_template_part( 'rula-partials/rula', 'hours' ); ?>
+
       
     </main><!-- #main -->
+    
+    
   </div><!-- #primary -->
+  
+  <?php // get_template_part( 'rula-partials/rula', 'team' ); ?>
 
 <?php get_footer(); ?>
