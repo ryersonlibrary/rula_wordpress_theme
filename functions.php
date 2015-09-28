@@ -218,6 +218,14 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 /**
+ * Ninja Forms customizations :)
+ */
+include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+if (is_plugin_active( 'ninja-forms/ninja-forms.php' )) {
+	require get_template_directory() . '/inc/custom_ninja_forms.php';
+}
+
+/**
  * Custom Post type for displaying Team members!
  * Should break this into it's own plugin!
  */

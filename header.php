@@ -51,7 +51,7 @@
 
 		<div class="social-links">
 			<ul>
-				<!-- <li><a href="mailto:<?php echo get_theme_mod('rula-email') ?>"><img src="http://placehold.it/32x32"></a></li> -->
+				<li><a href="mailto:<?php echo get_theme_mod('rula-email') ?>"><img src="<?php bloginfo('template_directory'); ?>/img/social-icons/32x32%20PNG/32-email.png"></a></li>
 				<li><a href="https://twitter.com/<?php echo get_theme_mod('rula-twitter') ?>"><img src="<?php bloginfo('template_directory'); ?>/img/social-icons/32x32%20PNG/32-twitter.png"></a></li>
 				<li><a href="https://facebook.com/<?php echo get_theme_mod('rula-facebook') ?>"><img src="<?php bloginfo('template_directory'); ?>/img/social-icons/32x32%20PNG/32-facebook.png"></a></li>
 				<li><a href="https://instagram.com/<?php echo get_theme_mod('rula-instagram') ?>"><img src="<?php bloginfo('template_directory'); ?>/img/social-icons/32x32%20PNG/32-instagram.png"></a></li>
