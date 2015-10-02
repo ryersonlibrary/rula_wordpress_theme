@@ -20,6 +20,10 @@ function underscores_customize_register( $wp_customize ) {
     'rula-footer-settings' => array(
       'title' => 'Footer',
       'priority' => 120,
+    ),
+    'rula-google-analytics' => array(
+      'title' => 'Google Analytics',
+      'priority' => 121,
     )
   );
 
@@ -54,6 +58,9 @@ function underscores_customize_register( $wp_customize ) {
     ),
     'rula-social' => array(
       'default' => true
+    ),
+    'rula-google-analytics-key' => array(
+      'default' => ''
     )
   );
 
@@ -93,7 +100,12 @@ function underscores_customize_register( $wp_customize ) {
       'label' => 'Enable Social Section',
       'section' => 'rula-footer-settings',
       'type' => 'checkbox'
-    )
+    ),
+    'rula-google-analytics-key' => array(
+      'label' => 'Google Analytics Key',
+      'section' => 'rula-google-analytics',
+      'type' => 'text'
+    ),
   );
 
   // Add our customizer sections
