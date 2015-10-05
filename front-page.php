@@ -29,7 +29,7 @@ get_header(); ?>
 
       <?php endwhile; // End of the loop. ?>
 
-      <?php //get_template_part( 'eventbrite/eventbrite', 'widget' ); ?>
+      <?php get_template_part( 'eventbrite/eventbrite', 'widget' ); ?>
 
       <?php get_template_part( 'rula-partials/rula', 'hours' ); ?>
 

@@ -1182,21 +1182,17 @@ h1, h2, h3, h4, h5, h6 {
   .home .content-section.events {
     width: 40%
   }
-  .home .content-section.hours {
-    width: 40%; /*FIXME: When events are put back in, remove this rule.*/
-  }
 }
 
 @media screen and (min-width: 62.5em) {
   .home .content-section.blurb {
-    width: 60%; /*FIXME: When events are put back in, set this to 40%.*/
+    width: 40%;
   }
   .home .content-section.events {
     width: 35%;
   }
   .home .content-section.hours {
     width: 25%;
-    width: 40%; /*FIXME: When events are put back in, remove this.*/
   }
   
 }
@@ -1229,6 +1225,11 @@ h1, h2, h3, h4, h5, h6 {
 .site-footer .ryerson-logo {
   width: 58px;
 }
+
 .site-footer .rula-logo {
   height: 28px;
+}
+
+.ninja-forms-cont {
+  width: 50%;
 }
