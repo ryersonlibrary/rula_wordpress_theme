@@ -1197,20 +1197,6 @@ h1, h2, h3, h4, h5, h6 {
   
 }
 
-/* Events stuff, make this more extensible */
-.events ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.events ul li {
-  background: rgba(91,194,244,0.05);
-  border: 2px solid rgb(91,194,244);
-  padding: 0.5em 1em;
-}
-.events ul li + li {
-  margin-top: 0.5em;
-}
 
 /* Hours stuff, make this more extensible */
 .hours ul {
