@@ -15,7 +15,7 @@ get_header(); ?>
 
         <article id="post-<?php the_ID(); ?>" <?php post_class(array('content-section', 'blurb')); ?>>
           <header class="entry-header">
-            <h2><?php the_title(); ?></h2>
+            <h1><?php the_title(); ?></h1>
           </header><!-- .entry-header -->
 
           <div class="entry-content">
@@ -29,16 +29,9 @@ get_header(); ?>
 
       <?php endwhile; // End of the loop. ?>
 
-      <?php get_template_part( 'eventbrite/eventbrite', 'widget' ); ?>
-
-      <?php get_template_part( 'rula-partials/rula', 'hours' ); ?>
-
-      
-    </main><!-- #main -->
-    
+    </main><!-- #main -->    
     
   </div><!-- #primary -->
   
-  <?php // get_template_part( 'rula-partials/rula', 'team' ); ?>
-
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

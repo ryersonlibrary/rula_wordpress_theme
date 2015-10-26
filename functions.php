@@ -218,48 +218,40 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 /**
- * Ninja Forms customizations :)
- */
-include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-if (is_plugin_active( 'ninja-forms/ninja-forms.php' )) {
-	require get_template_directory() . '/inc/custom_ninja_forms.php';
-}
-
-/**
  * Custom Post type for displaying Team members!
  * Should break this into it's own plugin!
+ * Commented out to reduce bloat
  */
-
 // Define Custom Post Type
-function rula_team_post_type() {
-	$rula_post_type_settings = array(
-		'labels' => array(
-			'name' => __('Team Members', 'rula-team'),
-			'singular_name' => __('Team Member', 'rula-team'),
-			'add_new' => __('Add new', 'rula-team'),
-			'add_new_item' => __('Add new team member', 'rula-team'),
-			'edit' => __('Edit', 'rula-team'),
-			'edit_item' => __('Edit team member', 'rula-team'),
-			'new_item' => __('New team member', 'rula-team'),
-			'view' => __('View team member', 'rula-team'),
-			'view_item' => __('View team member', 'rula-team'),
-			'search_items' => __('Search team members', 'rula-team'),
-			'not_found' => __('No team members found', 'rula-team'),
-			'not_found_in_trash' => __('No team members found in Trash', 'rula-team')
-		),
-		'description' => 'Custom post type to add team members to site',
-		'public' => true,
-		'menu_icon' => 'dashicons-groups',
-		'hierarchical' => true,
-		'has_archive' => false,
-		'supports' => array(
-			'title',
-			'editor',
-			'custom-fields',
-			'page-attributes'
-		),
-		'can_export' => true
-	);
-	register_post_type('rula-team', $rula_post_type_settings);
-}
-add_action('init', 'rula_team_post_type');
+// function rula_team_post_type() {
+// 	$rula_post_type_settings = array(
+// 		'labels' => array(
+// 			'name' => __('Team Members', 'rula-team'),
+// 			'singular_name' => __('Team Member', 'rula-team'),
+// 			'add_new' => __('Add new', 'rula-team'),
+// 			'add_new_item' => __('Add new team member', 'rula-team'),
+// 			'edit' => __('Edit', 'rula-team'),
+// 			'edit_item' => __('Edit team member', 'rula-team'),
+// 			'new_item' => __('New team member', 'rula-team'),
+// 			'view' => __('View team member', 'rula-team'),
+// 			'view_item' => __('View team member', 'rula-team'),
+// 			'search_items' => __('Search team members', 'rula-team'),
+// 			'not_found' => __('No team members found', 'rula-team'),
+// 			'not_found_in_trash' => __('No team members found in Trash', 'rula-team')
+// 		),
+// 		'description' => 'Custom post type to add team members to site',
+// 		'public' => true,
+// 		'menu_icon' => 'dashicons-groups',
+// 		'hierarchical' => true,
+// 		'has_archive' => false,
+// 		'supports' => array(
+// 			'title',
+// 			'editor',
+// 			'custom-fields',
+// 			'page-attributes'
+// 		),
+// 		'can_export' => true
+// 	);
+// 	register_post_type('rula-team', $rula_post_type_settings);
+// }
+// add_action('init', 'rula_team_post_type');

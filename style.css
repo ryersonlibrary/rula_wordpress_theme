@@ -1,13 +1,13 @@
 /*
-Theme Name: rula_dme
+Theme Name: rula_wordpress_theme
 Theme URI: http://library.ryerson.ca/dmelab
 Author: Patrick Fung
-Author URI: http://makestuffdostuff.com;
-Description: Theme for Ryerson Library's Digital Media Experience Lab
+Author URI: http://makestuffdostuff.com
+Description: Base theme for Ryerson Library's web properties.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: rula_dme
+Text Domain: rula_wordpress_theme
 Tags:
 
 This theme, like WordPress, is licensed under the GPL.
@@ -44,11 +44,7 @@ This theme was built on top of Underscores http://underscores.me/
 # Media
   ## Captions
   ## Galleries
-# RULA
-  ## Layout
-  ## Typography
-  ## Menus
-  ## Styles
+# RULA Stuff
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -279,11 +275,12 @@ th {
 --------------------------------------------------------------*/
 body,
 button,
+html,
 input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: Lato, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -296,11 +293,16 @@ h4,
 h5,
 h6 {
   clear: both;
+  margin-top: 0;
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 p {
   margin-top: 0;
-  margin-bottom: 1.5em;
+  /*margin-bottom: 1.5em;*/
+  margin-bottom: 0.5em;
 }
 
 dfn,
@@ -910,7 +912,7 @@ object {
 }
 
 /*--------------------------------------------------------------
-# RULA
+# RULA Stuff
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 ## Layout
@@ -1002,19 +1004,29 @@ body {
   display: block;
 }
 
+#primary, #secondary {
+  display: inline-block;
+  float: left;
+}
+
+#primary {
+  width: 66.6666%;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+#secondary {
+  width: 33.3333%;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+#secondary aside + aside {
+  padding-top: 0.5em;
+}
+
 /*--------------------------------------------------------------
-## Typography
+## Header
 --------------------------------------------------------------*/
-html, body {
-  font-family: Lato, sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: Oswald, sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 .site-title a {
   font-family: Oswald, sans-serif;
   font-weight: 400;
@@ -1124,98 +1136,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-## Styles
+## Footer Styles
 --------------------------------------------------------------*/
-.site-content {
-  min-height: 0rem;
-}
-
-.footer-menu {
+.site-footer .footer-menu {
   background: #323132;
   color: #F1F1F2;
+  padding: 1.5em;
 }
 
-.site-info p {
+.site-footer .site-info p {
   text-align: left;
   font-size: 0.85em;
   margin-bottom: 0
 }
-.site-info p + p {
+
+.site-footer .site-info p + p {
   margin-top: 0.5em;
 }
 
-.site-info p > .sep {
+.site-footer .site-info p > .sep {
   padding: 0 0.5em;
 }
 
-/*--------------------------------------------------------------
-## Frontpage Styles (custom breakpoints and stuff...)
---------------------------------------------------------------*/
-.home #primary {
-  padding: 0;
-}
-
-.home .content-section {
-  display: inline-block;
-  float: left;
-  width: 100%;
-  padding: 1.5em;
-}
-
-.home .content-section p {
-  margin-bottom: 0.5em;
-}
-
-.home .content-section .hours p,
-.home .content-section .events p, {
-  margin-bottom: 0;
-}
-
-.home .content-section h2 {
-  margin-top: 0;
-}
-
-@media screen and (min-width: 48em) {
-  .home .content-section.blurb{
-    width: 60%; 
-  }
-  .home .content-section.events {
-    width: 40%
-  }
-}
-
-@media screen and (min-width: 62.5em) {
-  .home .content-section.blurb {
-    width: 40%;
-  }
-  .home .content-section.events {
-    width: 35%;
-  }
-  .home .content-section.hours {
-    width: 25%;
-  }
-  
-}
-
-
-/* Hours stuff, make this more extensible */
-.hours ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/*--------------------------------------------------------------
-## Footer Styles
---------------------------------------------------------------*/
 .site-footer .ryerson-logo {
   width: 58px;
 }
 
 .site-footer .rula-logo {
   height: 28px;
-}
-
-.ninja-forms-cont {
-  width: 50%;
 }
