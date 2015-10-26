@@ -263,10 +263,3 @@ function rula_team_post_type() {
 	register_post_type('rula-team', $rula_post_type_settings);
 }
 add_action('init', 'rula_team_post_type');
-
-// Wordpress admin breaks in chrome 44+ so we add this
-function chrome_fix() {
-	if ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Chrome' ) !== false )
-		wp_add_inline_style( 'wp-admin', '#adminmenu { transform: translateZ(0); }' );
-}
-add_action('admin_enqueue_scripts', 'chrome_fix');
