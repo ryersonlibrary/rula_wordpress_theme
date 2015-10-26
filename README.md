@@ -1,6 +1,6 @@
 # rula_wordpress_theme
 
-This theme is still in development, and is intended to be forked or have a child theme developed for each web property.
+This theme is intended to be used as is or have a child theme developed to implement specific features.
 
 All rights reserved. Copyright [Ryerson Library](http://ryerson.ca)
 excepting images obviously take from other sites, such as Facebook and Twitter.
