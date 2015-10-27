@@ -1205,6 +1205,30 @@ body {
   border-top: 1px solid #ddd;
 }
 
+/* roughly card-ify Wordpress widgets TODO: Move this into another sheet custom_widget_css */
+/* Styles are VERY specific because I don't want to break other widgets that may exist */
+.widget.widget_archive,
+.widget.widget_categories,
+.widget.widget_meta,
+.widget.widget_search,
+.widget.widget_recent_entries,
+.widget.widget_recent_comments {
+  background: #FFF;
+  border-radius: 2px;
+  border: 1px solid #eee;
+  box-shadow: 0px 3px 6px -1px #aaa; 
+  padding: 1em;
+}
+
+.widget.widget_archive ul,
+.widget.widget_categories ul,
+.widget.widget_meta ul,
+.widget.widget_search ul,
+.widget.widget_recent_entries ul,
+.widget.widget_recent_comments ul {
+  margin: 0;
+  padding-left: 1.5em;
+}
 
 /*--------------------------------------------------------------
 ## MEDIA QUERIES
