@@ -1021,17 +1021,6 @@ body {
   padding-bottom: 1.5em;
 }
 
-/* 960px */
-@media screen and (max-width: 59.9999em) {
-  #primary {
-    width: 100%;
-  }
-  #secondary {
-    padding-top: 0;
-    width: 100%;
-  }
-}
-
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
@@ -1214,4 +1203,48 @@ body {
 .card-content + .card-content,
 .card-content + .card-footer {
   border-top: 1px solid #ddd;
+}
+
+
+/*--------------------------------------------------------------
+## MEDIA QUERIES
+--------------------------------------------------------------*/
+
+/* Screen size smaller than 960px */
+@media screen and (max-width: 59.9999em) {
+  /* content+sidebar widths + layout */
+  #primary {
+    width: 100%;
+  }
+  #secondary {
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%;
+  }
+
+  /* float .card elements! */
+  .card {
+    width: 47%;
+    float: left;
+    margin-bottom: 1.5em;
+    margin-left: 1.25%;
+    margin-right: 1.25%;
+  }
+
+  .card + .card { margin-top: 0; }
+}
+
+/* Screen size smaller than 600px */
+@media screen and (max-width: 37.4999em) {
+  #secondary { padding-bottom: 1.5em; }
+  
+  .card {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .card + .card { margin-top: 1.5em; }
 }
