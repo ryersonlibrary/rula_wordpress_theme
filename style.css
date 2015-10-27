@@ -1191,6 +1191,10 @@ body {
   list-style: none;
 }
 
+.card-content {
+  display: block;
+}
+
 .card + .card {
   margin-top: 0.5em;
 }
