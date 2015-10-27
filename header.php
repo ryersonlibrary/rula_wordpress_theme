@@ -31,21 +31,11 @@
 			<img class="site-header-image" src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="">
 			<?php endif; // End header image check. ?>
 
-			<?php if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<span>Ryerson Library's</span> <br>
-						<?php bloginfo( 'name' ); ?>
-					</a>
-					</h1>
-			<?php else : ?>
-				<p class="site-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<span>Ryerson Library's</span> <br>
-						<?php bloginfo( 'name' ); ?>
-					</a>
-				</p>
-			<?php endif; ?>
+			<p class="site-title">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<?php bloginfo( 'name' ); ?>
+				</a>
+			</p>
 			<!-- <p class="site-description"><?php bloginfo( 'description' ); ?></p> -->
 		</div><!-- .site-branding -->
 
