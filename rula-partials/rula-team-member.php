@@ -7,4 +7,4 @@
 
 <?php the_title(); ?>
 <?php the_content(); ?>
-<?php the_post_thumbnail(); ?>
+<?php the_post_thumbnail('rula-team-image'); ?>

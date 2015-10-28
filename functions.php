@@ -259,3 +259,5 @@ function rula_team_post_type() {
 	register_post_type('rula-team', $rula_post_type_settings);
 }
 add_action('init', 'rula_team_post_type');
+// Set profile image max size
+add_image_size('rula-team-image', 500, 500, false);
