@@ -5,6 +5,14 @@
  */
 ?>
 
-<?php the_title(); ?>
-<?php the_content(); ?>
-<?php the_post_thumbnail('rula-team-image'); ?>
+<div class="card">
+  <header class="card-header">
+    <?php the_title(); ?>
+  </header>
+  <div class="card-content">
+    <?php the_post_thumbnail('rula-team-image'); ?>
+  </div>
+  <div class="card-content">
+    <?php the_content(); ?>
+  </div>
+</div>

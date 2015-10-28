@@ -16,7 +16,6 @@ function add_body_class( $classes ) {
 add_filter( 'body_class', 'add_body_class' );
 
 get_header(); ?>
-
   <div id="primary" class="content-area">
     <main id="main" class="site-main clear" role="main">
       <?php while ( have_posts() ) : the_post(); ?>
@@ -30,19 +29,21 @@ get_header(); ?>
             <?php the_content(); ?>
           </div><!-- .entry-content -->
 
-          <?php // Set up loop context for custom post type 'rula-team'
-            $team_loop = new WP_Query( 
-              array(
-                'post_type' => 'rula-team'
-              ) 
-            );
-            while ( $team_loop->have_posts() ) {
-              $team_loop->the_post();
-              get_template_part( 'rula-partials/rula', 'team-member' );
-            } 
+          <div class="rula-team-container">
+            <?php // Set up loop context for custom post type 'rula-team'
+              $team_loop = new WP_Query( 
+                array(
+                  'post_type' => 'rula-team'
+                ) 
+              );
+              while ( $team_loop->have_posts() ) {
+                $team_loop->the_post();
+                get_template_part( 'rula-partials/rula', 'team-member' );
+              } 
 
-            wp_reset_query(); // Give the context back to the default post.
-          ?>
+              wp_reset_query(); // Give the context back to the default post.
+            ?>
+          </div>
 
           <footer class="entry-footer">
             <?php edit_post_link( esc_html__( 'Edit', 'underscores' ), '<span class="edit-link">', '</span>' ); ?>
@@ -55,5 +56,4 @@ get_header(); ?>
     
   </div><!-- #primary -->
   
-<?php //get_sidebar(); ?>
 <?php get_footer(); ?>
