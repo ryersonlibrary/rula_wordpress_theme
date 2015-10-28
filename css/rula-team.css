@@ -1,10 +1,13 @@
+.rula-team-container {
+  margin-left: -0.75em;
+  margin-right: -0.75em;
+}
 .rula-team-container .card {
   display: inline-block;
   float: left;
-  width: 25%;
+  width: 16.875em;
   margin-left: 0.75em;
   margin-right: 0.75em;
-
 }
 
 .rula-team-container .card + .card {

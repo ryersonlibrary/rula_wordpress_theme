@@ -966,16 +966,21 @@ body {
   margin-bottom: 4em;
 }
 
+.site-content {
+  padding: 0 0.75em;
+}
+
 .content-area,
 .widget-area,
-.site-info,
 .footer-menu {
-  padding: 0 1.5em;
+  padding: 0 0.75em;
 }
 
 .site-info {
   margin: 0.75em 0;
+  padding: 0 1.5em;
 }
+.site-info img { display: inline-block; }
 
 .site-header .social-links {
   color: #FFF;
