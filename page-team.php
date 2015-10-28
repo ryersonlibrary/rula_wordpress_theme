@@ -29,7 +29,7 @@ get_header(); ?>
             <?php the_content(); ?>
           </div><!-- .entry-content -->
 
-          <div class="rula-team-container">
+          <div class="rula-team-container clear">
             <?php // Set up loop context for custom post type 'rula-team'
               $team_loop = new WP_Query( 
                 array(
