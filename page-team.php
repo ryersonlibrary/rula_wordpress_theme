@@ -6,6 +6,15 @@
  * @subpackage Twenty_Fourteen
  * @since Twenty Fourteen 1.0
  */
+
+// Add no-sidebar to body class when using this template
+// Is this the best way to acheive this?
+function add_body_class( $classes ) {
+   $classes[] = 'no-sidebar';
+   return $classes;
+}
+add_filter( 'body_class', 'add_body_class' );
+
 get_header(); ?>
 
   <div id="primary" class="content-area">
@@ -46,5 +55,5 @@ get_header(); ?>
     
   </div><!-- #primary -->
   
-<?php get_sidebar(); ?>
+<?php //get_sidebar(); ?>
 <?php get_footer(); ?>
