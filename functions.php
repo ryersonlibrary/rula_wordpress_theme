@@ -248,7 +248,7 @@ function rula_team_post_type() {
 		'public' => true,
 		'menu_icon' => 'dashicons-groups',
 		'hierarchical' => true,
-		'has_archive' => false,
+		'has_archive' => true,
 		'rewrite' => array('slug' => 'team'),
 		'supports' => array(
 			'title',
