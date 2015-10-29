@@ -12,7 +12,4 @@
   <div class="card-content">
     <?php the_post_thumbnail('rula-team-image'); ?>
   </div>
-  <div class="card-content">
-    <?php the_content(); ?>
-  </div>
 </div>

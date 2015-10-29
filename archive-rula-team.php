@@ -28,14 +28,16 @@ get_header(); ?>
         ?>
       </header><!-- .page-header -->
 
-      <?php /* Start the Loop */ ?>
-      <?php while ( have_posts() ) : the_post(); ?>
+      <div class="rula-team-container">
+        <?php /* Start the Loop */ ?>
+        <?php while ( have_posts() ) : the_post(); ?>
 
-        <?php
-          get_template_part( 'rula-partials/rula-team-member', get_post_format() ); 
-        ?>
+          <?php
+            get_template_part( 'rula-partials/rula-team-member', get_post_format() ); 
+          ?>
 
-      <?php endwhile; ?>
+        <?php endwhile; ?>
+      </div>
 
     <?php else : ?>
 
