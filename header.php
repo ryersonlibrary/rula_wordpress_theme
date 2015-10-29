@@ -27,9 +27,11 @@
 	<header id="masthead" class="site-header" role="banner">
 
 		<div class="site-branding">
-			<?php if ( get_header_image() ) : ?>
-			<img class="site-header-image" src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="">
-			<?php endif; // End header image check. ?>
+      <?php if ( get_header_image() ) : ?>
+      <img class="site-header-image" src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="">
+      <?php else: ?>
+      <img class="site-header-image" src="http://placehold.it/1200x300" width="1200" height="300" alt="">
+      <?php endif; // End header image check. ?>
 
 			<p class="site-title">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
