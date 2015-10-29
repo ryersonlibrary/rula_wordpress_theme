@@ -26,16 +26,29 @@
 
       <h2>Contact</h2>
       <p>
-        Email: <a href="mailto:<?php echo get_theme_mod('rula-email') ?>" target="_blank"><span class="email"><?php echo get_theme_mod('rula-email') ?></span></a><br>
-        Phone: <span class="phone"><?php echo get_theme_mod('rula-phone') ?></span>
+        <?php if ( trim( get_theme_mod('rula-email', '' ) ) != '' ) : ?>
+          Email: <a href="mailto:<?php echo get_theme_mod('rula-email') ?>" target="_blank"><span class="email"><?php echo get_theme_mod('rula-email') ?></span></a><br>
+        <?php endif ?>
+
+        <?php if ( trim( get_theme_mod('rula-phone', '' ) ) != '' ) : ?>
+          Phone: <span class="phone"><?php echo get_theme_mod('rula-phone') ?></span>
+        <?php endif ?>
       </p>
       <?php if ( get_theme_mod('rula-social') ) : ?>
       <div class='rula-social'>
         <h2>Social</h2>
         <p>
-          Twitter: <a href="https://twitter.com/<?php echo get_theme_mod('rula-twitter') ?>">@<span class="twitter-handle"><?php echo get_theme_mod('rula-twitter') ?></span></a><br>
-          Facebook: <a href="https://facebook.com/<?php echo get_theme_mod('rula-facebook') ?>"><span class="facebook-handle"><?php echo get_theme_mod('rula-facebook') ?></span></a><br>
-          Instagram: <a href="https://instagram.com/<?php echo get_theme_mod('rula-instagram') ?>">@<span class="instagram-handle"><?php echo get_theme_mod('rula-instagram') ?></span></a>
+          <?php if ( trim( get_theme_mod('rula-twitter', '' ) ) != '' ) : ?>
+            Twitter: <a href="https://twitter.com/<?php echo get_theme_mod('rula-twitter') ?>">@<span class="twitter-handle"><?php echo get_theme_mod('rula-twitter') ?></span></a><br>
+          <?php endif ?>
+
+          <?php if ( trim( get_theme_mod('rula-facebook', '' ) ) != '' ) : ?>
+            Facebook: <a href="https://facebook.com/<?php echo get_theme_mod('rula-facebook') ?>"><span class="facebook-handle"><?php echo get_theme_mod('rula-facebook') ?></span></a><br>
+          <?php endif ?>
+
+          <?php if ( trim( get_theme_mod('rula-instagram', '' ) ) != '' ) : ?>
+            Instagram: <a href="https://instagram.com/<?php echo get_theme_mod('rula-instagram') ?>">@<span class="instagram-handle"><?php echo get_theme_mod('rula-instagram') ?></span></a>
+          <?php endif ?>
         </p>
       </div>
       <?php endif; ?>
