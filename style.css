@@ -54,6 +54,7 @@ html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust:     100%;
+  overflow-y: scroll;
 }
 
 body {
@@ -1210,7 +1211,7 @@ body {
 }
 
 .card-header, .card-content, .card-footer {
-  padding: 0.5em 1.1em;
+  padding: 0.5em;
 }
 
 .card-header + .card-content,

@@ -5,11 +5,11 @@
  */
 ?>
 
-<div class="card">
+<a href="<?php the_permalink(); ?>" class="card">
   <header class="card-header">
     <?php the_title(); ?>
   </header>
   <div class="card-content">
     <?php the_post_thumbnail('rula-team-image'); ?>
   </div>
-</div>
+</a>

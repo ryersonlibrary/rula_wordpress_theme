@@ -1,7 +1,13 @@
+a.card {
+  text-decoration: none;
+  color: #404040;
+}
+
 .rula-team-container {
   margin-left: -0.75em;
   margin-right: -0.75em;
 }
+
 .rula-team-container .card {
   display: inline-block;
   float: left;
