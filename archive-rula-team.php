@@ -33,7 +33,7 @@ get_header(); ?>
         <?php while ( have_posts() ) : the_post(); ?>
 
           <?php
-            get_template_part( 'rula-partials/rula-team-member', get_post_format() ); 
+            get_template_part( 'rula-partials/team', 'card' ); 
           ?>
 
         <?php endwhile; ?>
@@ -41,7 +41,7 @@ get_header(); ?>
 
     <?php else : ?>
 
-      <?php get_template_part( 'template-parts/content', 'none' ); ?>
+      <?php get_template_part( 'rula-partias/team', 'none' ); ?>
 
     <?php endif; ?>
 
