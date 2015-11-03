@@ -34,27 +34,45 @@
 
 <style type="text/css">
   .single-rula-team .hero {
+    display: inline-block;
     position: relative;
-    margin-bottom: 2.25em;
-    max-width: 500px;
+    max-width: 48em;
+    padding-right: 1.5em;
+    padding-bottom: 1.5em;
+    vertical-align: top
   }
 
   .single-rula-team .hero h1 {
     background: #323132;
     color: #F1F1F2;
     position: absolute;
-    bottom: -0.75em;
-    right: -0.75em;
     margin: 0;
     padding: 0.5em;
     line-height: 1;
+    right: 0;
+    bottom: 0;
+    font-size: 1.5em;
   }
 
-  @media screen and (min-width: 34.250em) {
+  .single-rula-team .entry-content {
+    vertical-align: top;
+    padding: 1em 0 0 0;
+  }
+
+  @media screen and (min-width: 48em) { 
     .single-rula-team .hero {
-      margin-right: 3em;
       max-width: 50%;
-      float: left;
+      display: inline-block;
+    }
+
+    .single-rula-team h1 {
+      font-size: 2em;
+    }
+
+    .single-rula-team .entry-content {
+      display: inline-block;
+      max-width: 49%;
+      padding: 0 1em 1em 1em;
     }
   }
 </style>
