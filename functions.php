@@ -184,8 +184,9 @@ function underscores_scripts() {
 
 	wp_enqueue_style( 'custom-widget-css', get_template_directory_uri() . '/css/custom_widgets.css' );
 
-	// Include special styles for the "/team" page
+	// Include special styles for the "/team" templates
 	if ( is_post_type_archive('rula-team') ) { wp_enqueue_style( 'rula-team-css', get_template_directory_uri() . '/css/rula-team.css' ); }
+	if ( get_post_type() == 'rula-team' ) { wp_enqueue_style( 'rula-team-css', get_template_directory_uri() . '/css/rula-team.css' ); }
 
 	wp_enqueue_script( 'underscores-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
