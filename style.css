@@ -542,6 +542,7 @@ a:active {
   display: block;
   width: 100%;
   float: left;
+  z-index: 999;
 }
 
 .main-navigation ul {
