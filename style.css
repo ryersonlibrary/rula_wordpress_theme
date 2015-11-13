@@ -1,6 +1,6 @@
 /*
 Theme Name: rula_wordpress_theme
-Theme URI: http://library.ryerson.ca/dmelab
+Theme URI: https://github.com/ryersonlibrary/rula_wordpress_theme
 Author: Patrick Fung
 Author URI: http://makestuffdostuff.com
 Description: Base theme for Ryerson Library's web properties.
@@ -8,7 +8,6 @@ Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: rula_wordpress_theme
-Tags:
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -563,10 +562,11 @@ a:active {
 }
 
 .main-navigation ul ul {
+  background: #000;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
   position: absolute;
-  top: 1.5em;
+  top: 2.85em;
   left: -999em;
   z-index: 99999;
 }
@@ -577,11 +577,13 @@ a:active {
 }
 
 .main-navigation ul ul a {
-  width: 200px;
+  width: 225px;
+  padding: 0 0.75em;
 }
 
 .main-navigation ul ul li {
-
+  margin: 0;
+  padding: 0;
 }
 
 .main-navigation li:hover > a,
