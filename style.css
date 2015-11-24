@@ -588,14 +588,17 @@ a:active {
 
 .main-navigation li:hover > a,
 .main-navigation li.focus > a {
+  text-decoration: none;
 }
 
 .main-navigation ul ul :hover > a,
 .main-navigation ul ul .focus > a {
+  text-decoration: none;
 }
 
 .main-navigation ul ul a:hover,
 .main-navigation ul ul a.focus {
+  text-decoration: none;
 }
 
 .main-navigation ul li:hover > ul,
@@ -1051,6 +1054,7 @@ body {
 
 .site-title a:hover {
   color: #FFF;
+  text-decoration: none;
 }
 
 .site-title a > span {
