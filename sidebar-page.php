@@ -8,7 +8,7 @@
   );
 ?>
 <div id="secondary" class="widget-area" role="complementary">
-  <aside id="pages" class="widget">
+  <aside class="wp_list_pages widget">
     <h3 class="widget-title"><?php echo get_the_title( $root_ancestor ); ?></h3>
     <ul>
        <?php wp_list_pages( $list_pages_options ); ?> 
